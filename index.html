@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Serveur vocal interactif : remplacer par une IA ou garder ?</title>
+<meta name="description" content="Serveur vocal interactif classique ou agent vocal IA : différences, quand garder son SVI, quand passer à l'IA, et comment migrer sans perdre d'appels.">
+<link rel="canonical" href="https://serveur-vocal-interactif.fr/">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="Serveur vocal interactif : remplacer par une IA ou garder ?">
+<meta property="og:description" content="Serveur vocal interactif classique ou agent vocal IA : différences, quand garder son SVI, quand passer à l'IA, et comment migrer sans perdre d'appels.">
+<meta property="og:url" content="https://serveur-vocal-interactif.fr/">
+<meta name="twitter:card" content="summary">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; base-uri 'self'; form-action 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://serveur-vocal-interactif.fr/"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Qu'est-ce qu'un serveur vocal interactif ?", "acceptedAnswer": {"@type": "Answer", "text": "C'est le système qui accueille un appel par un menu enregistré (« tapez 1 pour... ») et oriente l'appelant selon la touche choisie. On l'appelle aussi SVI. Il n'a pas besoin de comprendre la parole : il réagit aux touches du clavier."}}, {"@type": "Question", "name": "Un SVI IA est-il la même chose qu'un SVI classique ?", "acceptedAnswer": {"@type": "Answer", "text": "Non. Un SVI classique suit une arborescence figée de touches. Un SVI IA, ou agent vocal, comprend une phrase entière, identifie la demande et y répond ou oriente l'appel, sans menu."}}, {"@type": "Question", "name": "Faut-il supprimer son SVI pour passer à une IA ?", "acceptedAnswer": {"@type": "Answer", "text": "Pas forcément. On peut garder le SVI pour les flux très simples ou la saisie sécurisée au clavier, et confier le reste à une IA. Beaucoup de migrations passent par une phase hybride."}}]}]}</script>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header class="s-top"><div class="s-wrap">
+ <a class="s-brand" href="/">Serveur vocal <span>interactif</span></a>
+ <nav aria-label="Navigation"><a href="/remplacer-son-svi/">Remplacer son SVI</a><a href="/pourquoi-les-appelants-raccrochent/">Pourquoi les appelants raccrochent</a></nav>
+</div></header>
+<main>
+<div class="s-wrap">
+ 
+ <div class="s-pagehead">
+  <div class="s-eyebrow">Guide SVI, mis à jour le 4 octobre 2026</div>
+  <h1>Serveur vocal interactif : le remplacer par une IA, ou le garder ?</h1>
+  <p class="s-lead">Un SVI fait taper des touches, un agent vocal IA laisse parler. Aucun des deux n'est meilleur en soi : tout dépend de ce que vos appelants demandent vraiment.</p>
+ </div>
+ 
+<section>
+ <div class="s-versus">
+  <div class="s-vbox"><h3>Le SVI classique</h3><p>« Pour le service commercial, tapez 1. Pour le support, tapez 2. »</p>
+   <div class="s-keypad" aria-hidden="true"><span>1</span><span>2</span><span>3</span><span>4</span><span class="s-on">5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>*</span><span>0</span><span>#</span></div></div>
+  <div class="s-vbox"><h3>L'agent vocal IA</h3><p>« Dites-moi ce dont vous avez besoin. » L'appelant explique avec ses mots.</p>
+   <div class="s-wave" aria-hidden="true"><i style="height:14px"></i><i style="height:26px"></i><i style="height:40px"></i><i style="height:22px"></i><i style="height:34px"></i><i style="height:46px"></i><i style="height:28px"></i><i style="height:38px"></i><i style="height:16px"></i><i style="height:30px"></i><i style="height:12px"></i></div></div>
+ </div>
+</section>
+<section>
+ <h2>Ce que fait un SVI, en trois phrases</h2>
+ <p>Un serveur vocal interactif accueille l'appel avec un message enregistré et propose un menu. L'appelant tape une touche, le SVI le dirige vers un service, une file d'attente ou une information préenregistrée. Il fonctionne sur la reconnaissance des touches, pas de la voix.</p>
+ <p>Le détail technique d'un SVI est expliqué dans de nombreux guides, dont celui d'<a href="https://eliocall.com/?utm_source=serveur-vocal-interactif&amp;utm_medium=guide&amp;utm_campaign=svi-definition" rel="nofollow sponsored noopener">Eliocall</a>. Ici, la question est pratique : faut-il le garder, le remplacer, ou combiner les deux ?</p>
+</section>
+<section>
+ <h2>SVI classique ou agent vocal IA</h2>
+ <div class="s-tablewrap"><table>
+  <tr><th>Critère</th><th>SVI à touches</th><th>Agent vocal IA</th></tr>
+  <tr><td>Comment l'appelant s'exprime</td><td>Il tape une touche</td><td>Il parle avec ses mots</td></tr>
+  <tr><td>Ce qu'il faut configurer</td><td>Une arborescence de menus</td><td>Des connaissances et des règles métier</td></tr>
+  <tr><td>Demandes imprévues</td><td>Bloque ou renvoie vers un menu</td><td>Comprend, ou prend un message</td></tr>
+  <tr><td>Saisie sécurisée (code, numéro)</td><td>Bien adaptée (touches)</td><td>À éviter à la voix</td></tr>
+  <tr><td>Modification</td><td>Réenregistrer le menu</td><td>Mettre à jour les consignes</td></tr>
+  <tr><td>Risque principal</td><td>L'appelant raccroche dans les menus</td><td>Une réponse inventée si mal réglé</td></tr>
+ </table></div>
+</section>
+<section>
+ <h2>Quand garder son SVI</h2>
+ <ul class="s-clean">
+  <li><strong>Un flux simple et très volumineux</strong> : deux ou trois choix clairs, bien connus des appelants.</li>
+  <li><strong>La saisie au clavier</strong> : paiement, code client, numéro de dossier. Les touches sont plus sûres que la voix.</li>
+  <li><strong>Un SVI qui marche</strong> : si le taux d'abandon est faible et que personne ne s'en plaint, rien ne presse.</li>
+ </ul>
+</section>
+<section>
+ <h2>Quand passer à l'IA</h2>
+ <ul class="s-clean">
+  <li><strong>Les appelants se perdent</strong> dans plus de quatre options, ou raccrochent avant le bon menu.</li>
+  <li><strong>La plupart des demandes ne rentrent dans aucune case</strong> : elles finissent à l'opérateur.</li>
+  <li><strong>Vous voulez du hors-horaires</strong> sans file d'attente ni répondeur.</li>
+ </ul>
+</section>
+
+<section>
+ <h2>Ce que dit l'appelant, et ce que le menu en fait</h2>
+ <div class="s-tablewrap"><table>
+  <tr><th>L'appelant dit</th><th>Avec un SVI à touches</th><th>Avec un agent vocal IA</th></tr>
+  <tr><td>« Je veux changer mon rendez-vous de jeudi »</td><td>Choisir « rendez-vous », puis un sous-menu qui ne prévoit parfois pas « modifier »</td><td>Comprend l'intention, traite la demande ou prend un message complet</td></tr>
+  <tr><td>« J'ai reçu une facture que je ne comprends pas »</td><td>Hésite entre « facturation » et « comptabilité », tape au hasard</td><td>Identifie le sujet, oriente vers la bonne personne</td></tr>
+  <tr><td>« C'est urgent, j'ai une fuite »</td><td>Attend dans la file comme tout le monde</td><td>Repère l'urgence et la fait remonter tout de suite</td></tr>
+  <tr><td>« Vous êtes ouverts le samedi ? »</td><td>Écoute le message d'accueil en entier pour trouver l'information</td><td>Répond directement</td></tr>
+ </table></div>
+</section>
+<section>
+ <h2>Pour aller plus loin</h2>
+ <div class="s-cards" style="grid-template-columns:1fr 1fr">
+  <a class="s-card" href="/remplacer-son-svi/"><h3>Remplacer son SVI</h3><p>Une méthode en six étapes, qui part des statistiques de touches de votre SVI.</p><span class="s-more">Lire la méthode</span></a>
+  <a class="s-card" href="/pourquoi-les-appelants-raccrochent/"><h3>Pourquoi ils raccrochent</h3><p>Les défauts d'un menu qui font fuir, et les indicateurs pour les mesurer.</p><span class="s-more">Lire le guide</span></a>
+ </div>
+</section>
+
+ <section id="questions"><h2>Questions fréquentes</h2><details><summary>Qu'est-ce qu'un serveur vocal interactif ?</summary><p>C'est le système qui accueille un appel par un menu enregistré (« tapez 1 pour... ») et oriente l'appelant selon la touche choisie. On l'appelle aussi SVI. Il n'a pas besoin de comprendre la parole : il réagit aux touches du clavier.</p></details><details><summary>Un SVI IA est-il la même chose qu'un SVI classique ?</summary><p>Non. Un SVI classique suit une arborescence figée de touches. Un SVI IA, ou agent vocal, comprend une phrase entière, identifie la demande et y répond ou oriente l'appel, sans menu.</p></details><details><summary>Faut-il supprimer son SVI pour passer à une IA ?</summary><p>Pas forcément. On peut garder le SVI pour les flux très simples ou la saisie sécurisée au clavier, et confier le reste à une IA. Beaucoup de migrations passent par une phase hybride.</p></details></section>
+ <section><div class="s-cta"><h2>Entendre un agent vocal à la place d'un menu</h2><p>Le contraste se mesure à l'oreille. Eliocall permet de tester un agent vocal avant de s'engager.</p><a class="s-btn" href="https://eliocall.com/?utm_source=serveur-vocal-interactif&amp;utm_medium=guide&amp;utm_campaign=svi-accueil" rel="nofollow sponsored noopener">Tester un agent vocal</a></div></section>
+</div>
+</main>
+<footer><div class="s-wrap">
+ <div>Site rédigé par Louis Lardeux, fondateur d'Eliocall. Dernière mise à jour : 4 octobre 2026.</div>
+ <div><a href="/mentions-legales/">Mentions légales</a></div>
+</div></footer>
+</body>
+</html>
